@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SubscriberFormContainer from "./components/subscriberForm/SubscribeFormContainer";
+import AddTaskForm from "./components/taskForm/TaskForm";
+import TaskListContainer from "./components/taskList/TaskListContainer";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container header-container">
+        <div className="header-wrapper">
+          <SubscriberFormContainer />
+        </div>
+      </div>
+      <div className="container content-container">
+        <div className="content-wrapper">
+          <TaskListContainer />
+          <AddTaskForm />
+        </div>
+      </div>
+    </>
   );
-}
-
-export default App;
+};

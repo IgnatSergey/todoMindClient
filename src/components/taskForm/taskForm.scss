@@ -1,0 +1,40 @@
+.task-form {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: $task-background-color;
+  padding: 15px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: 0px 0px 4px 2px $shadow-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+
+  @media (min-width: $tablet-width) {
+    width: 48%;
+  }
+}
+
+.task-form__input-wrapper {
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.input-wrapper {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.task-form__input {
+  width: 100%;
+  min-height: 60px;
+}
+
+.input__error-message {
+  color: $input-error-message-color;
+  width: 100%;
+  margin-top: 5px;
+  @include font-astra(14px);
+}

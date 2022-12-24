@@ -1,0 +1,53 @@
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.task-list__item {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: $task-background-color;
+  padding: 15px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: 0px 0px 4px 2px $shadow-color;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 48%;
+  }
+}
+
+.task-list__item-header {
+  @include font-astra(20px, 18px, 400);
+  margin: 0;
+  margin-bottom: 20px;
+  word-break: break-word;
+}
+
+.task-list__item-date {
+    margin-top: auto;
+}
+
+.task-list__item-controll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.MuiFormControlLabel-labelPlacementStart{
+    margin: 0;
+}
+
+.task-list__no-tasks {
+  margin-bottom: 30px;
+  margin-left: 30px;
+  @include font-astra(20px, 18px, 400);
+}

@@ -1,0 +1,29 @@
+.button-subscribeInfo {
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.tgBotLink {
+    color:$tgBotLink-color;
+    margin-left: 5px;
+}
+
+.tgRegistrate-form__input {
+    margin-left: 10px;
+}
+
+.tgRegistrate-info {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.tgRegistrate-form {
+    display: flex;
+}
+
+.tgRegistrate-form__button {
+    margin-left: 10px;
+}

@@ -1,0 +1,38 @@
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0px 80px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 180px;
+    width: 100%;
+  }
+}
+
+.header-container {
+  flex-grow: 0;
+}
+
+.content-container {
+  flex-grow: 1;
+}
+
+.header-wrapper {
+  padding: 30px 40px;
+  background-color: $header-background-color;
+  box-sizing: border-box;
+  color: white;
+}
+
+.content-wrapper {
+  padding: 30px 40px;
+  background-color: #ffff96;
+  box-sizing: border-box;
+  height: 100%;
+}
